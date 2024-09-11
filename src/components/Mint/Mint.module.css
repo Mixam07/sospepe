@@ -1,0 +1,246 @@
+.mint{
+    padding: 7.5% 7.5% 0 7.5%;
+}
+
+.connect{
+    position: relative;
+    max-width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 2.5%;
+}
+
+.connect img{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.Web3Button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(5);
+    opacity: 0;
+}
+
+.text{
+    width: 95%;
+    margin: 0 auto;
+    margin-bottom: 2.5%;
+}
+
+.text img{
+    width: 100%;
+    display: block;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.number{
+    margin: 0 5%;
+}
+
+.container button,
+.container div{
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.container button img,
+.container div img{
+    width: 100%;
+}
+
+.container{
+    margin-bottom: 5%;
+}
+
+.blocked{
+    cursor: not-allowed;
+}
+
+.desc{
+    width: 65%;
+    margin: 0 auto;
+}
+
+.img{
+    margin-top: 15%;
+    margin-bottom: 5%;
+}
+
+.close{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+.info{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    padding-bottom: 2.5%;
+    position: relative;
+}
+
+.info::before{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background-color: #64A9EF;
+    border-radius: 50px;
+    transition: .5s opacity;
+}
+
+
+.info:hover::before{
+    opacity: 0;
+}
+
+.loading img,
+.img img,
+.desc img,
+.close img,
+.info img{
+    width: 100%;
+}
+
+.minus,
+.plus{
+    position: relative;
+}
+
+.minus img,
+.plus img{
+    width: 100%;
+    height: 100%;
+}
+
+.minus img:last-child,
+.plus img:last-child{
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.minus:hover img:last-child,
+.plus:hover img:last-child{
+    opacity: 1;
+}
+
+.minus.blocked:hover img:last-child,
+.plus.blocked:hover img:last-child{
+    opacity: 0;
+}
+
+.button{
+    position: relative;
+    width: 100%;
+    display: block;
+    margin-top: -2.5%;
+}
+
+.button > img{
+    width: 100%;
+}
+
+.button .number{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-90%, -50%);
+    height: 65%;
+    max-width: 10%;
+}
+
+.button .number img{
+    height: 100%;
+    max-width: 100%;
+}
+
+.imgActive{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: .5s opacity;
+}
+
+.button:hover .imgActive{
+    opacity: 1;
+}
+
+.button.blocked:hover .imgActive{
+    opacity: 0;
+}
+
+@media (max-width: 762px){
+    .button:hover .imgActive{
+        opacity: 0;
+    }
+
+    .minus:hover img:last-child,
+    .plus:hover img:last-child{
+        opacity: 0;
+    }
+
+    .connect,
+    .text{
+        margin-bottom: .5%;
+    }
+
+    .mint{
+        padding: 15% 5% 0 5%;
+    }
+
+    .container button,
+    .container div{
+        width: 27.5%;
+    }
+
+    .info:hover::before{
+        opacity: 1;
+    }
+}
+
+@media (max-height: 650px){
+    .mint{
+        padding: 12.5% 5% 0 5%;
+    }
+}
+
+@media (max-height: 600px){
+    .mint{
+        padding: 10% 5% 0 5%;
+    }
+}
+
+@media (max-height: 550px){
+    .mint{
+        padding: 7.5% 5% 0 5%;
+    }
+}
+
+@media (max-height: 500px){
+    .mint{
+        padding: 5% 5% 0 5%;
+    }
+}
+@media (max-height: 450px){
+    .mint{
+        padding: 2.5% 5% 0 5%;
+    }
+}

@@ -1,0 +1,17 @@
+#root{
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#root::-webkit-scrollbar{
+    display: none;
+}
+
+@media screen and (orientation: landscape) and (max-width: 768px) {
+    #root{
+        overflow: auto;
+    }
+}

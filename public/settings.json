@@ -1,0 +1,13 @@
+{
+    "socialNetworks": {
+        "opensea": {
+            "isActive": false,
+            "href": "https://opensea.io/collection/rgbfrens"
+        },
+        "twitter": {
+            "isActive": true,
+            "href": "https://twitter.com/rgbfrens"
+        }
+    },
+    "isSaleOpen": true
+}
